@@ -8,6 +8,13 @@ const { getSingleThought,
 router.route('/').get(getThought).post(createThought);
 // this route is /api/thoughts/:thoughtId  for 'get'
 router.route('/:thoughtId').get(getSingleThought);
+// update thought
+
+// delete thought
+
+// create reaction 
+
+// delete reaction
 
 
 
