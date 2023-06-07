@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const {createUser,getSingleUser} = require('../../controllers/userController');
+const {createUser,getSingleUser,getAllUsers} = require('../../controllers/userController');
 console.log('user routes')
 // create user
-router.route('/').post(createUser);
+router.route('/').post(createUser).get(getAllUsers);
 // get single user
 router.route('/:userId').get(getSingleUser);
 
